@@ -62,12 +62,14 @@ string Game::prepare_grid() {
 bool Game::is_arrow_key_code(int keycode) {
 	return (keycode == LEFT) || (keycode == RIGHT) || (keycode == UP) || (keycode == DOWN);
 }
+
 int Game::find_hole_number_at_position(int x, int y) {
 	for (int h_no(0); h_no < underground_.holes_.size(); ++h_no)
 		if (underground_.get_hole_no(h_no).is_at_position(x, y))
 			return h_no;		//number of the hole
 	return -1;				//not a hole
 }
+
 void Game::apply_rules() {
 	if (snake_.has_caught_mouse())
 		mouse_.die();

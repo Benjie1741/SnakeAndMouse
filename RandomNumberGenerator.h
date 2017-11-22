@@ -6,9 +6,7 @@
 // 
 //
 //---------------------------------------------------------------------
-
-#if !defined(RandomNumberGeneratorH)
-#define RandomNumberGeneratorH
+#pragma once
 
 #include <stdlib.h>	//for srand and rand routines
 #include <cassert>	//for assert
@@ -26,4 +24,3 @@ class RandomNumberGenerator
 		//supporting functions
 		void seed();
 };
-#endif // !defined(RandomNumberGeneratorH)

@@ -6,9 +6,7 @@
 // 
 //
 //---------------------------------------------------------------------
-#if !defined(constantsH)
-#define constantsH 
-
+#pragma once
 //--------define constants
 //________________________________________________
 //define constants
@@ -30,5 +28,3 @@
 
 //defining the other command letters
 #define QUIT      ('Q')	//to end game
-
-#endif // !defined(constantsH)
